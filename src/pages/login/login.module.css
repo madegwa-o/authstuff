@@ -1,0 +1,220 @@
+/* Login.module.css */
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #dae0e6;
+    padding: 20px;
+}
+
+.loginContainer {
+    display: flex;
+    width: 850px;
+    min-height: 650px;
+    background-color: white;
+    border-radius: 4px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.loginArt {
+    flex: 0 0 150px;
+    background-image: url("https://karuspace.karu.ac.ke/assets/images/LOGO.png");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    color: white;
+    display: flex;
+    align-items: flex-end;
+}
+
+@media (min-width: 768px) {
+    .loginArt {
+        flex: 0 0 40%;
+    }
+}
+
+.artOverlay {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 50%);
+    padding: 20px;
+    width: 100%;
+}
+
+.artOverlay h1 {
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.artOverlay p {
+    font-size: 12px;
+    margin: 0;
+    opacity: 0.8;
+}
+
+.loginFormContainer {
+    flex: 1;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.formWrapper {
+    max-width: 280px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.formWrapper h2 {
+    font-size: 20px;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: #1c1c1c;
+}
+
+.socialLogins {
+    margin: 16px 0;
+}
+
+.socialButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 10px 12px;
+    margin-bottom: 8px;
+    border-radius: 4px;
+    border: 1px solid #dadce0;
+    background-color: white;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.socialButton:hover {
+    background-color: #f5f5f5;
+}
+
+.socialButton img {
+    width: 18px;
+    height: 18px;
+    margin-right: 8px;
+}
+
+.divider {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+    color: #878a8c;
+    font-size: 12px;
+}
+
+.divider::before,
+.divider::after {
+    content: '';
+    flex: 1;
+    border-bottom: 1px solid #edeff1;
+}
+
+.divider span {
+    padding: 0 10px;
+}
+
+.loginForm {
+    margin-top: 16px;
+}
+
+.formGroup {
+    margin-bottom: 16px;
+}
+
+.formGroup input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #edeff1;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.formGroup input:focus {
+    border-color: #0079d3;
+    outline: none;
+}
+
+.inputError {
+    border-color: #ea0027 !important;
+}
+
+.errorMessage {
+    color: #ea0027;
+    font-size: 12px;
+    margin-top: 4px;
+}
+
+.rememberForgot {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+    font-size: 12px;
+}
+
+.checkbox {
+    display: flex;
+    align-items: center;
+}
+
+.checkbox input {
+    margin-right: 6px;
+}
+
+.forgotLink {
+    color: #0079d3;
+    text-decoration: none;
+}
+
+.forgotLink:hover {
+    text-decoration: underline;
+}
+
+.loginButton {
+    width: 100%;
+    padding: 10px;
+    background-color: #0079d3;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.loginButton:hover {
+    background-color: #016bc6;
+}
+
+.loginButton:disabled {
+    background-color: #7fbce9;
+    cursor: not-allowed;
+}
+
+.signupPrompt {
+    margin-top: 24px;
+    text-align: center;
+    font-size: 12px;
+    color: #878a8c;
+}
+
+.signupPrompt a {
+    color: #0079d3;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.signupPrompt a:hover {
+    text-decoration: underline;
+}

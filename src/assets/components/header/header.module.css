@@ -1,0 +1,126 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 8px 16px;
+    background-color: var(--bg-color);
+    box-shadow: 0 4px 6px -4px rgba(0, 0, 0, 0.1); /* Only bottom shadow */
+    width: 95%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+.headerRow {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--color);
+    margin: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.searchForm {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex: 1;
+    margin: 0 16px;
+    max-width: 500px;
+    background-color: var(--input-bg);
+    border-radius: 25px;
+    padding: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.searchForm input[type="text"] {
+    flex: 1;
+    border: none;
+    padding: 8px 12px;
+    font-size: 1rem;
+    border-radius: 20px;
+    outline: none;
+    background: transparent;
+}
+
+.searchForm input[type="text"]::placeholder {
+    color: var(--input-text);
+}
+
+.searchButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 16px;
+    background-color: var(--button-bg);
+    color: var(--text-color);
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.searchButton:hover {
+    background-color: var(--color-primary-hover);
+    color: var(--button-text);
+}
+
+.right {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.themeToggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+    color: var(--text-color);
+    transition: transform 0.2s;
+}
+
+.themeToggle:hover {
+    transform: scale(1.1);
+}
+
+/* Media query for screens below 500px */
+@media (max-width: 500px) {
+    .container {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 8px;
+    }
+
+    .headerRow {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+        text-align: left;
+        visibility: visible;
+    }
+
+    .right {
+        gap: 8px;
+        justify-content: flex-end;
+    }
+
+    .searchForm {
+        width: 100%;
+        margin: 0;
+    }
+}

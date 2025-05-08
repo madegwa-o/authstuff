@@ -1,0 +1,252 @@
+/* Register.module.css */
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #dae0e6;
+    padding: 20px;
+}
+
+.registerContainer {
+    display: flex;
+    width: 850px;
+    min-height: 650px;
+    background-color: white;
+    border-radius: 4px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.registerArt {
+    flex: 0 0 150px;
+    background-image: url('https://www.redditstatic.com/accountmanager/18e257d5fdea817c0f12cccf8867d930.png');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    color: white;
+    display: flex;
+    align-items: flex-end;
+}
+
+@media (min-width: 768px) {
+    .registerArt {
+        flex: 0 0 40%;
+    }
+}
+
+.artOverlay {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 50%);
+    padding: 20px;
+    width: 100%;
+}
+
+.artOverlay h1 {
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.artOverlay p {
+    font-size: 12px;
+    margin: 0;
+    opacity: 0.8;
+}
+
+.registerFormContainer {
+    flex: 1;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.formWrapper {
+    max-width: 280px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.formWrapper h2 {
+    font-size: 20px;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: #1c1c1c;
+}
+
+.socialLogins {
+    margin: 16px 0;
+}
+
+.socialButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 10px 12px;
+    margin-bottom: 8px;
+    border-radius: 4px;
+    border: 1px solid #dadce0;
+    background-color: white;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.socialButton:hover {
+    background-color: #f5f5f5;
+}
+
+.socialButton img {
+    width: 18px;
+    height: 18px;
+    margin-right: 8px;
+}
+
+.divider {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+    color: #878a8c;
+    font-size: 12px;
+}
+
+.divider::before,
+.divider::after {
+    content: '';
+    flex: 1;
+    border-bottom: 1px solid #edeff1;
+}
+
+.divider span {
+    padding: 0 10px;
+}
+
+.registerForm {
+    margin-top: 16px;
+}
+
+.formGroup {
+    margin-bottom: 16px;
+}
+
+.formGroup input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #edeff1;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.formGroup input:focus {
+    border-color: #ff4500;
+    outline: none;
+}
+
+.inputError {
+    border-color: #ea0027 !important;
+}
+
+.errorMessage {
+    color: #ea0027;
+    font-size: 12px;
+    margin-top: 4px;
+}
+
+.continueButton, .signupButton {
+    width: 100%;
+    padding: 10px;
+    background-color: #ff4500;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.continueButton:hover, .signupButton:hover {
+    background-color: #e03d00;
+}
+
+.continueButton:disabled, .signupButton:disabled {
+    background-color: #ffa280;
+    cursor: not-allowed;
+}
+
+.emailDisplay {
+    background-color: #f6f7f8;
+    padding: 12px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    position: relative;
+}
+
+.emailDisplay span {
+    font-size: 12px;
+    color: #878a8c;
+    display: block;
+    margin-bottom: 4px;
+}
+
+.emailDisplay p {
+    font-size: 14px;
+    margin: 0;
+    color: #1c1c1c;
+}
+
+.editButton {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    background: none;
+    border: none;
+    color: #0079d3;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.editButton:hover {
+    text-decoration: underline;
+}
+
+.termsCheckbox {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 16px;
+    font-size: 12px;
+    color: #878a8c;
+}
+
+.termsCheckbox input {
+    margin-right: 8px;
+    margin-top: 3px;
+}
+
+.termsCheckbox a {
+    color: #0079d3;
+    text-decoration: none;
+}
+
+.termsCheckbox a:hover {
+    text-decoration: underline;
+}
+
+.loginPrompt {
+    margin-top: 24px;
+    text-align: center;
+    font-size: 12px;
+    color: #878a8c;
+}
+
+.loginPrompt a {
+    color: #ff4500;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.loginPrompt a:hover {
+    text-decoration: underline;
+}

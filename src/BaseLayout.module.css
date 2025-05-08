@@ -1,0 +1,56 @@
+.layout {
+    display: flex;
+    height: calc(100vh - 64px); /* Assuming Header height is 64px */
+    overflow: hidden;
+    position: relative;
+}
+
+.sidebarContainer {
+    position: relative;
+    height: 100%;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    background-color: var(--bg-color);
+    overflow-y: auto;
+}
+
+.content {
+    flex: 1;
+}
+
+/* Toggle button when sidebar is visible */
+.toggleButton {
+    position: absolute;
+    top: 10%;
+    right: -16px; /* Position it just outside the sidebar */
+    transform: translateY(-90%);
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: var(--bg-color);
+    color: var(--color-primary);
+    border: 1px solid var(--card-border);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    z-index: 1000;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+/* Toggle button when sidebar is hidden */
+.toggleButtonClosed {
+    left: 8px;
+    right: auto;
+}
+
+.toggleButton:hover {
+    background-color: var(--bg-color-tertiary);
+    transform: translateY(-50%) scale(1.1);
+}
